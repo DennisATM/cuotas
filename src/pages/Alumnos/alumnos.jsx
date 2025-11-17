@@ -97,7 +97,7 @@ export const Alumnos = () => {
   return (
     <main className="p-6 min-h-screen bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-3xl font-bold">Gestión de Alumnos</h2>
+        <h2 className="text-3xl text-blue-700 font-bold">Gestión de Alumnos</h2>
         <button
           onClick={cargarAlumnos}
           disabled={loading}

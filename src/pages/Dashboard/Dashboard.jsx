@@ -88,7 +88,7 @@ export const Dashboard = () => {
     return (
         <main className="bg-background-light font-display p-4">
             <header className="flex justify-between mb-6">
-                <h1 className="text-2xl md:text-3xl font-bold">5° B - Nider Orrego Quevedo</h1>
+                <h1 className="text-2xl md:text-3xl text-blue-500 font-bold">5° B - Nider Orrego Quevedo</h1>
                 <div className="flex items-center gap-1">
                     <select className="rounded-md border py-2 px-3 bg-white">
                         <option>2025</option>
@@ -138,7 +138,7 @@ export const Dashboard = () => {
                                         <td className="py-3 px-4">{a.telefono || '-'}</td>
                                         <td className="py-3 px-4">{formatCurrency(saldoAcumulado(a.id))}</td>
                                         <td className="py-3 px-4">
-                                            <button onClick={() => verPagosAlumno(a)} className="px-3 py-1 bg-emerald-500 hover:bg-emerald-400 text-amber-400 rounded text-sm">Ver Pagos</button>
+                                            <button onClick={() => verPagosAlumno(a)} className="px-3 py-1 bg-emerald-700 hover:bg-emerald-500 text-amber-400 rounded text-sm">Ver Pagos</button>
                                         </td>
                                     </tr>
                                 ))}

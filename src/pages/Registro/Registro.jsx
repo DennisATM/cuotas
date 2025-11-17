@@ -81,7 +81,7 @@ export const Registro = () => {
 
   return (
     <main className="p-6 min-h-screen bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
-      <h2 className="text-2xl font-bold mb-4">Registrar Alumno — Aula Nider Orrego Quevedo</h2>
+      <h2 className="text-2xl text-blue-500 font-bold mb-4">Registrar Alumno — Aula Nider Orrego Quevedo</h2>
 
       <form onSubmit={handleSubmit} className="max-w-lg bg-white dark:bg-gray-800 p-6 rounded-lg border">
         {error && <div className="mb-4 text-red-600">{error}</div>}
