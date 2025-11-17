@@ -150,22 +150,22 @@ export const Dashboard = () => {
 
             {/* Modal de pagos por alumno */}
             {selectedAlumno && (
-                <div className="fixed inset-0 bg-gray-600 flex items-center justify-center z-50">
+                <div className="fixed m-auto inset-0 w-full h-full md:w-2/4 md:h-2/4 bg-gray-600 flex items-center justify-center z-50">
                     <div className="bg-gray-100 dark:bg-gray-600 rounded-lg w-11/12 md:w-3/4 max-h-[80vh] overflow-auto p-6">
                         <div className="flex justify-between items-center mb-4">
-                            <h4 className="font-semibold">Pagos de {selectedAlumno.nombre} {selectedAlumno.apellido}</h4>
+                            <h4 className="font-semibold text-yellow-500">Pagos de {selectedAlumno.nombre} {selectedAlumno.apellido}</h4>
                             <div className="flex items-center gap-2">
-                                <span className="text-sm text-gray-500">Saldo acumulado: <strong>{formatCurrency(saldoAcumulado(selectedAlumno.id))}</strong></span>
-                                <button onClick={cerrarModal} className="px-3 py-1 border bg-emerald-700 rounded">Cerrar</button>
+                                <span className="text-sm text-white">Saldo acumulado: <strong>{formatCurrency(saldoAcumulado(selectedAlumno.id))}</strong></span>
+                                <button onClick={cerrarModal} className="px-3 py-1 border bg-emerald-700 text-amber-500 rounded">Cerrar</button>
                             </div>
                         </div>
                         <div>
                             {selectedPagos.length === 0 ? (
-                                <div className="text-sm text-gray-500">No hay pagos registrados para este alumno.</div>
+                                <div className="text-sm text-white">No hay pagos registrados para este alumno.</div>
                             ) : (
                                 <table className="w-full text-left text-sm">
                                     <thead>
-                                        <tr className="text-gray-500">
+                                        <tr className="text-white">
                                             <th className="py-2 px-3">Fecha</th>
                                             <th className="py-2 px-3">Meses</th>
                                             <th className="py-2 px-3">Monto</th>
@@ -173,7 +173,7 @@ export const Dashboard = () => {
                                     </thead>
                                     <tbody>
                                         {selectedPagos.map(p => (
-                                            <tr key={p.id} className="border-t hover:bg-gray-50">
+                                            <tr key={p.id} className="text-white border-t hover:bg-gray-50">
                                                 <td className="py-2 px-3">{p.fecha}</td>
                                                 <td className="py-2 px-3">{(p.meses || []).join(', ')}</td>
                                                 <td className="py-2 px-3">{formatCurrency(p.monto ?? p.importe)}</td>
