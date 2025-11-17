@@ -13,7 +13,7 @@ export const Navbar = () => {
         <div className="flex justify-between h-14 items-center">
           <div className="flex items-center gap-4">
             <div className="text-lg w-15 h-15 text-amber-500 text-shadow-white font-bold">
-              <img src="/cuotas/insigniaNOQ.png" className='rounded-full' alt="Insignia NOQ" />
+              <img src="./cuotas/insigniaNOQ.png" className='rounded-full' alt="Insignia NOQ" />
             </div>
             <div className="hidden md:flex items-center gap-2">
               <NavLink to="/" className={linkClass} end>

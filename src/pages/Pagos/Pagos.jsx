@@ -145,10 +145,10 @@ export const Pagos = () => {
   const lookupAlumno = (id) => alumnos.find(a => a.id === id)
 
   return (
-    <main className="p-6 min-h-screen bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
+    <main className="p-6 min-h-screen bg-background-dark dark:bg-background-dark text-gray-200 dark:text-gray-200">
       <h2 className="text-2xl font-bold mb-4 text-blue-700">Gestión de Pagos</h2>
 
-      <section className="mb-6 bg-white dark:bg-gray-800 p-6 rounded-lg border">
+      <section className="mb-6 bg-gray-800 dark:bg-gray-800 p-6 rounded-lg border">
         {error && <div className="mb-3 text-red-600">{error}</div>}
         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
