@@ -196,7 +196,7 @@ export const Pagos = () => {
         ) : (
           <div className="overflow-x-auto bg-gray-800 dark:bg-gray-800 rounded-lg border">
             <table className="w-full text-left text-sm">
-              <thead className="bg-gray-100 dark:bg-gray-700">
+              <thead className="bg-gray-700 dark:bg-gray-700">
                 <tr>
                   <th className="px-4 py-3">Alumno</th>
                   <th className="px-4 py-3">Fecha</th>
