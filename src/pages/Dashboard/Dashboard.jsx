@@ -150,13 +150,13 @@ export const Dashboard = () => {
 
             {/* Modal de pagos por alumno */}
             {selectedAlumno && (
-                <div className="fixed inset-0 bg-light flex items-center justify-center z-50">
+                <div className="fixed inset-0 bg-dark flex items-center justify-center z-50">
                     <div className="bg-white dark:bg-gray-100 rounded-lg w-11/12 md:w-3/4 max-h-[80vh] overflow-auto p-6">
                         <div className="flex justify-between items-center mb-4">
                             <h4 className="font-semibold">Pagos de {selectedAlumno.nombre} {selectedAlumno.apellido}</h4>
                             <div className="flex items-center gap-2">
                                 <span className="text-sm text-gray-500">Saldo acumulado: <strong>{formatCurrency(saldoAcumulado(selectedAlumno.id))}</strong></span>
-                                <button onClick={cerrarModal} className="px-3 py-1 border rounded">Cerrar</button>
+                                <button onClick={cerrarModal} className="px-3 py-1 border bg-emerald-700 rounded">Cerrar</button>
                             </div>
                         </div>
                         <div>

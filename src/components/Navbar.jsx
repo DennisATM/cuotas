@@ -13,7 +13,7 @@ export const Navbar = () => {
         <div className="flex justify-between h-14 items-center">
           <div className="flex items-center gap-4">
             <div className="text-lg w-15 h-15 text-amber-500 text-shadow-white font-bold">
-              <img src="./cuotas/insigniaNOQ.png" className='rounded-full' alt="Insignia NOQ" />
+              <img src="./insigniaNOQ.png" className='rounded-full' alt="Insignia NOQ" />
             </div>
             <div className="hidden md:flex items-center gap-2">
               <NavLink to="/" className={linkClass} end>
@@ -45,7 +45,7 @@ export const Navbar = () => {
       {open && (
         <div className="md:hidden px-4 pt-2 pb-4 space-y-1">
           <NavLink to="/" className={linkClass} end onClick={() => setOpen(false)}>
-            Dashboard
+            Resúmen
           </NavLink>
           <NavLink to="/alumnos" className={linkClass} onClick={() => setOpen(false)}>
             Alumnos

@@ -194,7 +194,7 @@ export const Pagos = () => {
         {loading ? (
           <div>Cargando pagos...</div>
         ) : (
-          <div className="overflow-x-auto bg-white dark:bg-gray-800 rounded-lg border">
+          <div className="overflow-x-auto bg-gray-800 dark:bg-gray-800 rounded-lg border">
             <table className="w-full text-left text-sm">
               <thead className="bg-gray-100 dark:bg-gray-700">
                 <tr>
